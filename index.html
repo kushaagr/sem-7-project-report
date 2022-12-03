@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Report (Semester 7)</title>
+</head>
+<body>
+    <section class="front-page">
+        <h1>Leave Management System</h1>
+        <h3>A MINOR PROJECT REPORT</h3>
+        <h3>Submitted in partial fulfillment of the requirement for the 
+            award of Degree of Master of Computer Applicaitons</h3>
+        <h4>Submitted to</h4>
+        <img src="img/rgpv-logo.png" alt="Logo of Rajiv Gandhi Prodyokigi Vishwavidyalaya (university)">
+        <h3>RAJIV GANDHI PRODYOGIKI VISHWAVIDYALAYA, BHOPAL (M.P.)</h3>
+        <h4>Submitted by:</h4>
+
+        <h3>Mr. Kushagra Mehrotra <br>
+        Enrollment No. 0827CA19DD18</h3>
+
+        <h4>Under the supervision of</h4>
+        <h3><u>Dr. Nidhi Dahale</u></h3>
+        <img src="img/acropolis-named-logo.jpg" alt="Logo of Acropolis college (Indore) with its moto">
+        <h3>MASTER OF COMPUTER APPLICATIONS</h3>
+        <h3>ACROPOLIS INSTITUTE OF TECHNOLOGY & RESEARCH, INDORE</h3>
+        <h3>SESSON - 2022-23</h3>
+
+    </section>
+
+    <section class="certificate">
+        <h1>Department of Computer Applications <br>
+        AITR, Indore</h1>
+
+        <h2>BONAFIDE CERTIFICATE</h2>
+
+        <p>This is to certify that Major Project entitled <strong>"Leave management system"</strong>
+        being submitted my <strong>Mr. Kushagra Mehrotra (0827CA19DD18)</strong> for 
+        partial fulfillment of the requirement for the award of degree of 
+        <strong>Master of Computer Applications</strong> to <strong>Rajiv Gandhi Proudyogiki
+        Vishwavidyalaya, Bhopal (M.P.)</strong> during the academic year 2022-2023 is a 
+        record of bonafide piece of work, carried out by the student under my supervision
+        and guidance in the <strong>Departmment of Computer Applications, AITR, Indore.</strong></p>
+
+        <div class="sign-block">
+            <p>
+                <strong>Prof. Geeta Santosh</strong>
+                <br>
+                Professor & HOD, MCA
+            </p>
+        </div>
+        <div class="sign-block">
+            <p>
+                <strong>(Internal Examiner)
+                <br>
+                Date: 08 December, 2022</strong>
+            </p>
+            <p>
+                <strong>(External Examiner)
+                <br>
+                Date: 08 December, 2022</strong>
+            </p>
+        </div>
+    </section>
+    
+    <section class="page">
+        <div class="header">
+            <div class="header__institute">
+                <img src="img/acropolis-logo.png" class="header__institute-logo" alt="Logo of Acropolis">
+                <h3 class="header__institute-name">
+                ACROPOLIS INSTITUTE OF TECHNOLOGY & RESEARCH, INDORE</h3>
+            </div>
+            <div class="header__department">(Faculty of Computer Applications)</div>
+        </div>
+        <h2>Abstract </h2>
+        <p>The purpose of the project is to bring leave data to one central place. 
+        In current system, leaves count of a faculty is stored in Excel file, their 
+        per-day leave is marked in a physical sheet, calculation for total attendance for a 
+        month is also done on paper, and application to get a leave is sent via mail.
+
+        The current system has data spread across various places, but with today's technology
+        and in-house expertise this problem can be solved. 
+
+        We propose an online leave centralization system where faculties can send application,
+        and management can approve it, and account for it.
+
+        This system streamlines the leave management process.</p>
+    </section>
+
+    <section class="page">
+        <div class="header">
+            <div class="header__institute">
+                <img src="img/acropolis-logo.png" class="header__institute-logo" alt="Logo of Acropolis">
+                <h3 class="header__institute-name">
+                    ACROPOLIS INSTITUTE OF TECHNOLOGY & RESEARCH, INDORE</h3>
+            </div>
+            <div class="header__department">(Faculty of Computer Applications)</div>
+        </div>
+
+        <h2>Acknowledgement</h2>
+        <p>I would like to use this opportunity to extend my heartfelt gratitude to
+        our guide and supervisor of this project, <strong>Dr. Nidhi Dahale</strong> who is reponsible 
+        for letting us explore this idea.</p>
+        <p>I am also thankful to <strong>Geeta Santosh</strong>, Head of Department of
+        Faculty of Computer Applications for cooperation and support to complete this work.
+        I would also like to express my thanks to <strong>Dr. S.C. Sharma</strong> Director
+        AITR Indore for providing necessary facilites. I would also like to convey my thanks to
+        <strong>Prof. Nitin Kulkarni</strong> and staff member <strong>Irfan sir</strong>
+        of Faculty of Computer Applications. Thanks are due for all the staff members and 
+        lab staff of Faculty of Computer Applications AITR for providing help and support.</p>
+        <div class="student-info">
+            <strong>
+                Kushagra Mehrotra <br><br><br>
+                0827CA19DD18
+            </strong>
+        </div>
+    </section>
+
+    <section class="page">
+        <figure>
+            <img src="img/dfd-level-0.png" alt="Data-flow diagram level-0">
+            <figcaption>Data-flow diagram level-0</figcaption>
+        </figure>
+    </section>
+    <section class="page">
+        <figure>
+            <img src="img/dfd-level-1.png" alt="Data-flow diagram level-1">
+            <figcaption>Data-flow diagram level-1</figcaption>
+        </figure>
+    </section>
+    <section class="page">
+        <figure>
+            <img src="img/dfd-level-2.png" alt="Data-flow diagram level-2">
+            <figcaption>Data-flow diagram level-2</figcaption>
+        </figure>
+    </section>
+
+    <section class="page">
+        <h2>Testing</h2>
+        <ol>
+            <li>Testing strategy: Manual testing was done to build the prototype.</li>
+            <li>Tests</li>
+            <ol>
+                <li>Logging-in with correct credentials</li>
+                <li>Logging-in with incorrect credentials</li>
+                <li>Applying for Leave</li>
+                <li>What if the number of leave days entered is 0 or negative while 
+                    applying?</li>
+                <li>What if the required number of a leave type is not available 
+                    while applying?</li>
+                <li>Approving a Leave Request (deducts the number of leave days applied for)</li>
+                <li>Rejecting a Leave Request</li>
+                <li>What if the given number of the request's leave type is not available
+                    while approving?</li>
+                <li>What if there are multiple leave requests (in pending) of same 
+                    leave type from the same user, that are individually under limit of the 
+                    available leaves but together they exceed it?</li>
+            </ol>       
+        </ol>
+    </section>
+
+    <section class="page">
+        <h2>Conclusion</h2>
+        <p> The system has completed its first phase: design and prototyping.
+        With design down, the system can now move to final development phase.
+        There are many nuances yet to be thought over but the overall problem and 
+        solution is now concrete.</p>
+        
+        <p>
+        <ol>
+            <li class="main-heading">Future Scope</li>
+            <ol>
+                <li>Deployment over server.</li>
+                <li>Secure login for admin page and HOD page.</li>
+                <li>Government holidays could be fetched from a calendar API 
+                    and leaves like Optional leave can be taken care in automated
+                    fashion.</li>
+            </ol>
+        </ol>
+        
+        
+        </p>
+    </section>
+
+</body>
+</html>
