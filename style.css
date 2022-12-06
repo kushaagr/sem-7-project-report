@@ -23,6 +23,38 @@ section {
     outline: 2px solid hotpink;
 }
 
+table {
+/*    border: 1px solid black;*/
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+/*    outline: 1px solid black;*/
+    padding: .3rem;
+/*    padding: 20px;*/
+    text-align: left;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width:10%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    min-width:70%;
+}
+
+tr:nth-of-type(1) {
+/*    background-color: yellow;*/
+}
+
+tr:nth-of-type(2) {
+
+}
+
 img {
     max-width: 100%;
 }
@@ -49,7 +81,35 @@ li {
 }
 li:before { 
     content: counters(item, ".") " "; 
+/*    content: counters(item, "."); */
     counter-increment: item;
+}
+/*
+.space-column {
+    padding: 0;
+    margin-block: -15px;
+    margin-top: -30px;
+    border-right: 2px solid black;
+    border: 2px solid black;
+}
+*/
+
+.space-column td {
+    padding: 0;
+}
+
+.space-column span {
+    display: inline-block;
+    padding: 5px;
+    outline: 2px solid black;
+}
+
+.bordered-table th,
+.bordered-table td 
+/*.bordered-table tr*/
+{
+/*    padding:;*/
+    border: 2px solid black;
 }
 
 .header {
@@ -83,6 +143,16 @@ li:before {
 
 .main-heading {
     text-transform: uppercase;
+}
+
+.sub-heading {
+/*    text-transform: capitalize;*/
+}
+
+.roman-list {
+    counter-reset: new-count;
+    
+/*    outline: 2px solid black;*/
 }
 
 .sign-block {
@@ -139,6 +209,49 @@ li:before {
 .page > h2 {
 /*    width: 100%;*/
     text-transform: uppercase;
-    width: min-content;
+    width: max-content;
     margin: 4rem auto;
 }
+
+.disable-list-style:before {
+/*    outline: 3px solid hotpink;*/
+    content: "";
+}
+
+
+.start-from-2 {
+    counter-reset: item 1;
+}
+
+/*
+.start-from-2 {
+    counter-increment: 3;
+}*/
+
+/*
+.start-from-2 > li:before {
+    counter-increment: item 2;
+    content: counters(item, ".") " ";
+
+}*/
+
+.roman-list > li:before {
+    content: counters(new-count, " ", lower-roman) " ";
+    counter-increment: new-count;
+/*    outline: 3px solid hotpink;*/
+/*    list-style-type: lower-roman;*/
+}
+
+/*
+.continue-page > li:first-child {
+    outline: 2px solid black;
+}
+
+.continue-page  li:first-child:before {
+    content: "";
+}*/
+
+/*.disable-list-style {
+    outline: 2px solid black;
+}*/
+
